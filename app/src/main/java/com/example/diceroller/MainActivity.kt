@@ -6,7 +6,7 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
 /**
- * Hoạt động cho phép người dùng tung xúc xắc và xem kết quả trên mà hình.
+ * Hoạt động cho phép người dùng tung xúc xắc và xem kết quả trên màn hình.
  */
 class MainActivity : AppCompatActivity() {
 
