@@ -6,13 +6,12 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
 /**
- * This activity allows the user to roll a dice and view the result
- * on the screen.
+ * Hoạt động cho phép người dùng tung xúc xắc và xem kết quả trên mà hình.
  */
 class MainActivity : AppCompatActivity() {
 
     /**
-     * This method is called when the Activity is created.
+     * Phương thức này được gọi khhi hoạt động được tạo.
      */
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,12 +20,12 @@ class MainActivity : AppCompatActivity() {
         // Find the Button in the layout
         val rollButton: Button = findViewById(R.id.button)
 
-        // Set a click listener on the button to roll the dice when the user taps the button
+        // Set a click listener on the button
         rollButton.setOnClickListener { rollDice() }
     }
 
     /**
-     * Roll the dice and update the screen with the result.
+     * Đổ xúc xắc và cập nhật kết quả lên màn hình.
      */
     private fun rollDice() {
         // Create new Dice object with 6 sides and roll it
@@ -40,12 +39,12 @@ class MainActivity : AppCompatActivity() {
 }
 
 /**
- * Dice with a fixed number of sides.
+ * Xúc xắc với số mặt cố định.
  */
 class Dice(private val numSides: Int) {
 
     /**
-     * Do a random dice roll and return the result.
+     * Thực hiện tung xúc xắc ngẫu nhien và trả về kết quả.
      */
     fun roll(): Int {
         return (1..numSides).random()
